@@ -1,3 +1,11 @@
+## Overview & Notes
+> **Note:** Developed for the GA4GH Clinical & Phenotypic Data Capture (Clin/Pheno) Work Stream. 
+> Designed to automate CSV conversion into Phenopacket v2.0 schema without command-line dependencies.
+
+### Features & Usage Comments
+- `csv_to_phenopackets.py`: Implements core JSON schema mapping and validation logic.
+- `csv_to_phenopackets_gui.py`: Built using Tkinter to provide a desktop GUI.
+- `CSV2PhenopacketsConverter.exe`: Packaged executable for non-technical users.
 CSV to Family Phenopacket converter
 =
 
