@@ -1,0 +1,251 @@
+{
+  "id": "2",
+  "proband": {
+    "id": "2_PROBAND",
+    "subject": {
+      "id": "2_PROBAND",
+      "timeAtLastEncounter": {
+        "age": {
+          "iso8601duration": "P1Y"
+        }
+      },
+      "sex": "MALE"
+    },
+    "phenotypicFeatures": [
+      {
+        "type": {
+          "id": "HP:0002110",
+          "label": "Bronchiectasis"
+        }
+      },
+      {
+        "type": {
+          "id": "HP:0012236",
+          "label": "Elevated sweat chloride"
+        }
+      },
+      {
+        "type": {
+          "id": "HP:0032342",
+          "label": "Reduced forced expiratory volume in one second"
+        }
+      }
+    ],
+    "interpretations": [
+      {
+        "id": "2_PROBAND",
+        "progressStatus": "SOLVED",
+        "diagnosis": {
+          "disease": {
+            "id": "MONDO:0003847",
+            "label": "hereditary disease"
+          },
+          "genomicInterpretations": [
+            {
+              "subjectOrBiosampleId": "2_PROBAND",
+              "interpretationStatus": "CONTRIBUTORY",
+              "variantInterpretation": {
+                "variationDescriptor": {
+                  "id": "7-117627580-CC-C",
+                  "geneContext": {
+                    "symbol": "CFTR"
+                  },
+                  "expressions": [
+                    {
+                      "syntax": "hgvs",
+                      "value": "ENST00000003084:c.3528del"
+                    },
+                    {
+                      "syntax": "hgvs",
+                      "value": "p.(Lys1177SerfsTer15)"
+                    }
+                  ],
+                  "vcfRecord": {
+                    "genomeAssembly": "GRCh38",
+                    "chrom": "7",
+                    "pos": "117627580",
+                    "ref": "CC",
+                    "alt": "C"
+                  },
+                  "allelicState": {
+                    "id": "GENO:0000135",
+                    "label": "heterozygous"
+                  }
+                }
+              }
+            },
+            {
+              "subjectOrBiosampleId": "2_PROBAND",
+              "interpretationStatus": "CONTRIBUTORY",
+              "variantInterpretation": {
+                "variationDescriptor": {
+                  "id": "7-117531115-G-T",
+                  "geneContext": {
+                    "symbol": "CFTR"
+                  },
+                  "expressions": [
+                    {
+                      "syntax": "hgvs",
+                      "value": "ENST00000003084:c.489+1G>T"
+                    },
+                    {
+                      "syntax": "hgvs",
+                      "value": "p.?"
+                    }
+                  ],
+                  "vcfRecord": {
+                    "genomeAssembly": "GRCh38",
+                    "chrom": "7",
+                    "pos": "117531115",
+                    "ref": "G",
+                    "alt": "T"
+                  },
+                  "allelicState": {
+                    "id": "GENO:0000135",
+                    "label": "heterozygous"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "metaData": {
+      "created": "2026-02-13T19:56:00.296466Z",
+      "createdBy": "csv_to_phenopacket_gui.py",
+      "resources": [
+        {
+          "id": "hp",
+          "name": "Human Phenotype Ontology",
+          "url": "http://purl.obolibrary.org/obo/hp.owl",
+          "version": "2026-01-08",
+          "namespacePrefix": "HP",
+          "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+        },
+        {
+          "id": "mondo",
+          "name": "Mondo Disease Ontology",
+          "url": "http://purl.obolibrary.org/obo/mondo/mondo-international.owl",
+          "version": "2026-02-03",
+          "namespacePrefix": "MONDO",
+          "iriPrefix": "http://purl.obolibrary.org/obo/MONDO_"
+        },
+        {
+          "id": "geno",
+          "name": "Genotype Ontology",
+          "url": "http://purl.obolibrary.org/obo/geno.owl",
+          "version": "2025-07-25",
+          "namespacePrefix": "GENO",
+          "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+        }
+      ],
+      "phenopacketSchemaVersion": "2.0"
+    }
+  },
+  "relatives": [
+    {
+      "id": "2_MOTHER",
+      "subject": {
+        "id": "2_MOTHER",
+        "sex": "FEMALE"
+      },
+      "metaData": {
+        "created": "2026-02-13T19:56:35.393164Z",
+        "createdBy": "csv_to_phenopacket_gui.py",
+        "phenopacketSchemaVersion": "2.0"
+      }
+    },
+    {
+      "id": "2_FATHER",
+      "subject": {
+        "id": "2_FATHER",
+        "sex": "MALE"
+      },
+      "metaData": {
+        "created": "2026-02-13T19:56:35.393164Z",
+        "createdBy": "csv_to_phenopacket_gui.py",
+        "phenopacketSchemaVersion": "2.0"
+      }
+    },
+    {
+      "id": "2_SIBLING",
+      "subject": {
+        "id": "2_SIBLING",
+        "sex": "MALE"
+      },
+      "metaData": {
+        "created": "2026-02-13T19:56:35.393164Z",
+        "createdBy": "csv_to_phenopacket_gui.py",
+        "phenopacketSchemaVersion": "2.0"
+      }
+    }
+  ],
+  "pedigree": {
+    "persons": [
+      {
+        "familyId": "2",
+        "individualId": "2_MOTHER",
+        "paternalId": "0",
+        "maternalId": "0",
+        "sex": "FEMALE",
+        "affectedStatus": "UNAFFECTED"
+      },
+      {
+        "familyId": "2",
+        "individualId": "2_FATHER",
+        "paternalId": "0",
+        "maternalId": "0",
+        "sex": "MALE",
+        "affectedStatus": "UNAFFECTED"
+      },
+      {
+        "familyId": "2",
+        "individualId": "2_SIBLING",
+        "paternalId": "2_FATHER",
+        "maternalId": "2_MOTHER",
+        "sex": "MALE",
+        "affectedStatus": "UNAFFECTED"
+      },
+      {
+        "familyId": "2",
+        "individualId": "2_PROBAND",
+        "paternalId": "2_FATHER",
+        "maternalId": "2_MOTHER",
+        "sex": "MALE",
+        "affectedStatus": "AFFECTED"
+      }
+    ]
+  },
+  "metaData": {
+    "created": "2026-02-13T19:56:00.296466Z",
+    "createdBy": "csv_to_phenopacket_gui.py",
+    "resources": [
+      {
+        "id": "hp",
+        "name": "Human Phenotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/hp.owl",
+        "version": "2026-01-08",
+        "namespacePrefix": "HP",
+        "iriPrefix": "http://purl.obolibrary.org/obo/HP_"
+      },
+      {
+        "id": "mondo",
+        "name": "Mondo Disease Ontology",
+        "url": "http://purl.obolibrary.org/obo/mondo/mondo-international.owl",
+        "version": "2026-02-03",
+        "namespacePrefix": "MONDO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/MONDO_"
+      },
+      {
+        "id": "geno",
+        "name": "Genotype Ontology",
+        "url": "http://purl.obolibrary.org/obo/geno.owl",
+        "version": "2025-07-25",
+        "namespacePrefix": "GENO",
+        "iriPrefix": "http://purl.obolibrary.org/obo/GENO_"
+      }
+    ],
+    "phenopacketSchemaVersion": "2.0"
+  }
+}
