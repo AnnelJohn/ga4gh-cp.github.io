@@ -1,0 +1,9 @@
+ID,RELATIONSHIP TO PROBAND,SEX,AFFECTED STATUS,HPO PRESENT,AGE OF ONSET (yrs),Gene,Transcript,inheritance_description-1,Zygosity,Chrom-1,Pos-1,Ref-1,Alt-1,HGVSc-1,HGVSp-1,Chrom-2,Pos-2,Ref-2,Alt-2,HGVSc-2,HGVSp-2
+1_PROBAND,Self,Male,Affected,HP:0001159 (Syndactyly)|HP:0000486 (Strabismus)|HP:0000520 (Proptosis),0,FGFR2,ENST00000336553,De novo,Heterozygous,10,123256215,T,G,c.1688A>C,p.(Glu563Ala),,,,,,
+2_MOTHER,Mother,Female,Unaffected,,,,,,,,,,,,,,,,,,
+2_FATHER,Father,Male,Unaffected,,,,,,,,,,,,,,,,,,
+2_SIBLING,Sibling,Male,Unaffected,,,,,,,,,,,,,,,,,,
+2_PROBAND,Self,Male,Affected,HP:0002110 (Bronchiectasis)|HP:0012236 (Elevated sweat chloride)|HP:0032342 (Reduced forced expiratory volume in one second),1,CFTR,ENST00000003084,Autosomal recessive (compound heterozygous),Heterozygous,7,117627580,CC,C,c.3528del,p.(Lys1177SerfsTer15),7,117531115,G,T,c.489+1G>T,p.?
+
+
+python -m nuitka --standalone --onefile --windows-disable-console --output-dir=dist csv_to_phenopackets_gui.py
